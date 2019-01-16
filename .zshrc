@@ -1,7 +1,8 @@
 # alias
-alias ll='ls -lFh'
-alias la='ls -lahF'
+alias ll='ls -lGFh'
+alias la='ls -lAGhF'
 alias history='history -iD'
+alias grep='grep --color=auto'
 
 setopt no_beep
 setopt no_hist_beep
@@ -9,17 +10,8 @@ setopt no_list_beep
 
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
-
 export PATH=$PATH:$HOME/.nodebrew/current/bin
-export PYENV_ROOT=${HOME}/.pyenv
 export PATH=$PATH:/Application/XAMPP/xamppfiles/bin/
-
-if [ -d "${PYENV_ROOT}" ]; then
-    export PATH=${PYENV_ROOT}/bin:$PATH
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
-
 
 autoload -U compinit promptinit
 compinit -C

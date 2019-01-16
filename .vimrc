@@ -74,7 +74,7 @@ set smartcase
 set hlsearch
 
 nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
 
 set whichwrap=b,s,h,l,<,>,[,],~
 set cursorline

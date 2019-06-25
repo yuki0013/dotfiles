@@ -23,3 +23,4 @@ for f in .??*;do
     ln -snfv ${DOT_DIR}/${f} ${HOME}/${f}
 done
 
+. ~/.bashrc

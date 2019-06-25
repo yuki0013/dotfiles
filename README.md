@@ -1,2 +1,4 @@
 .files
-`$ . "${HOME}/dotfiles/deploy.sh"`
+```
+$ . "${HOME}/dotfiles/deploy.sh"
+```

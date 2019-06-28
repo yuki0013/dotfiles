@@ -1,4 +1,5 @@
 alias ..='cd ../'
+alias ls='ls --color=auto'
 alias la='ls -lAhFG --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -lhFG --color=auto'

@@ -24,3 +24,4 @@ for f in .??*;do
 done
 
 . ~/.bashrc
+cd

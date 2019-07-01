@@ -1,5 +1,6 @@
 #!/bin/bash
 DOT_DIR="${HOME}/dotfiles"
+CRT_DIR=$(pwd)
 _REMOTE="git@github.com:yuki0013/dotfiles.git"
 
 if [ ! type "git" >/dev/null 2>&1 ]; then
@@ -14,7 +15,7 @@ if [ ! -d ${DOT_DIR} ];then
 fi
 
 cd ${DOT_DIR}
-git pull
+git pull >/dev/null 2>&1
 
 for f in .??*;do
     [ ${f} = ".git" ] && continue
@@ -24,4 +25,4 @@ for f in .??*;do
 done
 
 . ~/.bashrc
-cd
+cd ${CRT_DIR}

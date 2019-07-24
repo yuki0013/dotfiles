@@ -7,4 +7,4 @@ alias ll='ls -lhFG --color=auto'
 export PROMPT_COMMAND="history -a"
 export PATH="~/bin:$PATH"
 
-PS1="[\t] \[\e[32m\e[40m\]\u\[\e[0m\]@\[\e[36m\e[40m\]\h:\w\n\\[\e[0m\] $ "
+PS1="[\t] \[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h:\w\n\\[\e[m\] $ "

@@ -1,6 +1,6 @@
 #!/bin/bash
 DOT_DIR="${HOME}/dotfiles"
-CRTSHELL=$(ps $$ | awk 'NR==2' | awk '{print $NF}' | grep -Eo "[A-z]+")
+CRTSHELL=$(ps $$ | awk 'NR==2' | awk '{print $NF}' | grep -Eo "[A-Za-z]+")
 CRT_DIR=$(pwd)
 _REMOTE="git@github.com:yuki0013/dotfiles.git"
 

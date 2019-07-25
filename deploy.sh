@@ -1,5 +1,6 @@
 #!/bin/bash
 DOT_DIR="${HOME}/dotfiles"
+CRTSHELL=$(ps $$ | awk 'NR==2' | awk '{print $NF}' | grep -Eo "[A-z]+")
 CRT_DIR=$(pwd)
 _REMOTE="git@github.com:yuki0013/dotfiles.git"
 
@@ -24,5 +25,5 @@ for f in .??*;do
     ln -snfv ${DOT_DIR}/${f} ${HOME}/${f}
 done
 
-. ~/.bashrc
+. ~/.${CRTSHELL}rc
 cd ${CRT_DIR}

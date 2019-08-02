@@ -60,6 +60,8 @@ set ruler
 set number
 set wildmenu
 set history=5000
+set virtualedit=onemore
+set wildmode=list:full
 
 set expandtab
 set tabstop=2

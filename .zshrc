@@ -1,6 +1,7 @@
 # alias
-alias ll='ls -lGFh'
-alias la='ls -lAGhF'
+alias ls='ls -FhG --color=auto'
+alias ll='ls -lGFh --color=auto'
+alias la='ls -lAGhF --color=auto'
 alias history='history -iD'
 alias grep='grep --color=auto'
 

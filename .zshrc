@@ -9,7 +9,12 @@ setopt no_beep
 setopt no_hist_beep
 setopt no_list_beep
 
-export ZPLUG_HOME=/usr/local/opt/zplug
+if [ ! -e ${HOME}/.zplug ];then
+  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
+  chmod -R 755 ${HOME}/.zplug
+fi
+
+export ZPLUG_HOME=~/.zplug
 source $ZPLUG_HOME/init.zsh
 export PATH=$PATH:$HOME/.nodebrew/current/bin
 export PATH=$PATH:/Application/XAMPP/xamppfiles/bin/

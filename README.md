@@ -1,4 +1,2 @@
-.files
-```
-$ . "${HOME}/dotfiles/deploy.sh"
-```
+
+deploy.sh: ${HOME}にリンクを貼るようシェル

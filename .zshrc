@@ -11,7 +11,6 @@ setopt no_list_beep
 
 if [ ! -e ${HOME}/.zplug ];then
   curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
-  chmod -R 755 ${HOME}/.zplug
 fi
 
 export ZPLUG_HOME=~/.zplug
@@ -118,5 +117,5 @@ function peco-history-selection() {
 
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
-
+chmod -R 755 ${HOME}/.zplug
 zplug load

@@ -1,12 +1,14 @@
 #!/bin/bash
+# ${HOME}に.rcのリンク作成するやつ
+
 DOT_DIR="${HOME}/dotfiles"
-CRTSHELL=$(ps $$ | awk 'NR==2' | awk '{print $NF}' | grep -Eo "[A-Za-z]+")
-CRT_DIR=$(pwd)
 _REMOTE="git@github.com:yuki0013/dotfiles.git"
+
+cd
 
 if [ ! type "git" >/dev/null 2>&1 ]; then
     echo "command not found: git"
-    return 0
+    exit 1
 fi
 
 if [ ! -d ${DOT_DIR} ];then
@@ -25,5 +27,4 @@ for f in .??*;do
     ln -snfv ${DOT_DIR}/${f} ${HOME}/${f}
 done
 
-. ~/.${CRTSHELL}rc
-cd ${CRT_DIR}
+cd

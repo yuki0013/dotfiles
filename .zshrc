@@ -64,7 +64,6 @@ if [ -f "${HOME}/.commonshrc" ] ; then
     source "${HOME}/.commonshrc"
 fi
 
-function chpwd() { ls }
 # zplug
 #source ~/.zplug/init.zsh
 # ないコマンドで赤くなるやつ

@@ -1,7 +1,7 @@
 # alias
-alias ls='ls -FhG --color=auto'
-alias ll='ls -lGFh --color=auto'
-alias la='ls -lAGhF --color=auto'
+alias ls='ls -Fh --color=auto'
+alias ll='ls -lFh --color=auto'
+alias la='ls -lAhF --color=auto'
 alias history='history -iD'
 alias grep='grep --color=auto'
 
@@ -17,6 +17,7 @@ export ZPLUG_HOME=~/.zplug
 source $ZPLUG_HOME/init.zsh
 export PATH=$PATH:$HOME/.nodebrew/current/bin
 export PATH=$PATH:/Application/XAMPP/xamppfiles/bin/
+export PATH=${PATH}:/home/yuki/bin/
 
 autoload -U compinit promptinit
 compinit -C

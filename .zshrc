@@ -9,10 +9,6 @@ setopt no_beep
 setopt no_hist_beep
 setopt no_list_beep
 
-if [ ! -e ${HOME}/.zplug ];then
-  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
-fi
-
 export ZPLUG_HOME=~/.zplug
 source $ZPLUG_HOME/init.zsh
 export PATH=$PATH:$HOME/.nodebrew/current/bin
